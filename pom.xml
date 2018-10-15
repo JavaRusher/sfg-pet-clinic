@@ -46,5 +46,5 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/JavaRusher/sfg-pet-clinic.git</developerConnection>
-      </scm>
+    </scm>
 </project>
