@@ -1,6 +1,8 @@
 package edu.javarush.sfgpetclinic.model;
 
 public class PetType extends BaseEntity{
+
+
     private String name;
 
     public String getName() {
@@ -11,3 +13,4 @@ public class PetType extends BaseEntity{
         this.name = name;
     }
 }
+
