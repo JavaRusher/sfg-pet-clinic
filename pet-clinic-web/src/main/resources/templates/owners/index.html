@@ -5,7 +5,26 @@
     <title>List of Owners</title>
 </head>
 <body>
+<!--/*@thymesVar id="owner" type="edu.javarush.sfgpetclinic.model.Owner"*/-->
     <h1 th:text="'List of Owners'">List of Owners</h1>
+
+    <table>
+        <thead></thead>
+        <tr>
+            <th>Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="owner: ${owners}">
+            <td th:text="${owner.id}">1</td>
+            <td th:text="${owner.firstName}">Jill</td>
+            <td th:text="${owner.lastName}">Smith</td>
+        </tr>
+        </tbody>
+
+    </table>
 
 </body>
 </html>
