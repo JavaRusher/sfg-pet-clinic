@@ -3,7 +3,7 @@ package edu.javarush.sfgpetclinic.bootstrap;
 import edu.javarush.sfgpetclinic.model.*;
 import edu.javarush.sfgpetclinic.service.OwnerService;
 import edu.javarush.sfgpetclinic.service.PetTypeService;
-import edu.javarush.sfgpetclinic.service.SpecialtyService;
+import edu.javarush.sfgpetclinic.service.SpecialityService;
 import edu.javarush.sfgpetclinic.service.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -15,9 +15,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
     private final PetTypeService petTypeService;
-    private final SpecialtyService specialtyService;
+    private final SpecialityService specialtyService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtyService specialtyService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialtyService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;

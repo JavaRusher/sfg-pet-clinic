@@ -2,18 +2,18 @@ package edu.javarush.sfgpetclinic.service.map;
 
 import edu.javarush.sfgpetclinic.model.Speciality;
 import edu.javarush.sfgpetclinic.model.Vet;
-import edu.javarush.sfgpetclinic.service.SpecialtyService;
+import edu.javarush.sfgpetclinic.service.SpecialityService;
 import edu.javarush.sfgpetclinic.service.VetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
+public class VetMapService extends AbstractMapService<Vet,Long> implements VetService {
 
-    private final SpecialtyService specialtyService;
+    private final SpecialityService specialtyService;
 
-    public VetServiceMap(SpecialtyService specialtyService) {
+    public VetMapService(SpecialityService specialtyService) {
         this.specialtyService = specialtyService;
     }
 
